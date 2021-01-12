@@ -1,0 +1,123 @@
+.container {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.text {
+  margin-bottom: 3rem;
+  padding: 2%;
+  color: #fff;
+}
+
+.iconWrappers {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.box_1 {
+  width: 23%;
+  min-width: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 6em;
+  margin-right: 5%;
+}
+
+.box_1 span {
+  color: #fff;
+  font-size: 11px;
+  width: max-content;
+}
+
+.usersWrapper {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+  background-color: rgb(251, 108, 171);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 1s ease-in-out;
+}
+
+.usersWrapper:hover {
+  transform: translateY(-5%);
+}
+
+.box_2 {
+  width: 23%;
+  min-width: 65px;
+  height: 5.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 5%;
+}
+
+.box_3 {
+  width: 20%;
+  min-width: 63px;
+  height: 5.4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.maleWrapper {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(48, 187, 181);
+  transition: transform 1s ease-in-out;
+  cursor: pointer;
+}
+
+.maleWrapper:hover {
+  transform: translateY(-5%);
+}
+
+.box_2 span {
+  color: #fff;
+  font-size: 11px;
+  width: max-content;
+  text-transform: capitalize;
+}
+
+.femaaleWrapper {
+  border-radius: 10px;
+  width: 100%;
+  height: 3.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(123 106 194);
+  cursor: pointer;
+  transition: transform 1s ease-in-out;
+}
+
+.femaaleWrapper:hover {
+  transform: translateY(-5%);
+}
+
+.box_3 span {
+  color: #fff;
+  font-size: 10px;
+  width: max-content;
+  text-transform: capitalize;
+}

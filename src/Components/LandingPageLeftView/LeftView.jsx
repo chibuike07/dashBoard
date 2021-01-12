@@ -2,6 +2,7 @@ import React from "react";
 import WelcomeNote from "./WelcomeNote";
 import LeftViewStyles from "../../Styles/LandingpageLeftView/LeftView.module.css";
 import UserSearchBar from "./UserSearchBar";
+import UserRequestButton from "./UserRequestButton";
 const LeftView = () => {
   const { container, wrapper } = LeftViewStyles;
   return (
@@ -9,6 +10,7 @@ const LeftView = () => {
       <div className={wrapper}>
         <WelcomeNote />
         <UserSearchBar />
+        <UserRequestButton />
       </div>
     </div>
   );
