@@ -1,9 +1,14 @@
 import React from "react";
+import LandingpageStyles from "../../Styles/LandingpageLeftView/LandingPage.module.css";
+import LeftView from "../../Components/LandingPageLeftView/LeftView";
 
 const LandingPage = () => {
+  const { container, wrapper } = LandingpageStyles;
   return (
-    <div>
-      <h2>hello</h2>
+    <div className={container}>
+      <div className={wrapper}>
+        <LeftView />
+      </div>
     </div>
   );
 };

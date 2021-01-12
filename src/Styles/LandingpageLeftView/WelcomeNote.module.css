@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  height: 5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  width: auto;
+  height: 100%;
+  padding: 2%;
+  line-height: 4;
+}
+
+.header {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header span {
+  font-weight: lighter;
+  text-transform: capitalize;
+  font-size: larger;
+  margin-right: 2%;
+  color: #fff;
+}
+
+.header strong {
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.paragraph {
+  font-size: 13px;
+  color: #ccc;
+  opacity: 0.5;
+}
+
+.paragraph::first-letter {
+  text-transform: uppercase;
+}
