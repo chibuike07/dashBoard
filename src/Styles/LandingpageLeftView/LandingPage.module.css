@@ -9,4 +9,10 @@
   width: 100%;
   min-height: 100vh;
   background-color: rgb(37, 42, 65);
+  justify-content: space-around;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
 }
