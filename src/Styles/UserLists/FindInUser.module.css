@@ -1,0 +1,32 @@
+.container {
+  width: 40%;
+  min-width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  min-width: 200px;
+  height: 20px;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: rgb(226, 227, 236);
+  border: none;
+  font-size: 16px;
+  text-transform: capitalize;
+  transform: translateY(20%);
+}
+
+.input::placeholder {
+  padding-left: 10%;
+  font-size: 15px;
+  color: #000;
+}
+
+.icon {
+  transform: translate(1vw, -20px);
+  opacity: 0.5;
+}

@@ -6,7 +6,7 @@ import { DashBoardContext } from "../../Context_file/DashBoardContext";
 
 const CountryDropDown = () => {
   const { container, form, input } = CountryDropDownStyles;
-  const [{ countries }] = useContext(DashBoardContext);
+  const [{ countries, showCountries }] = useContext(DashBoardContext);
   const [country, setcountry] = useState("");
 
   return (
@@ -20,6 +20,7 @@ const CountryDropDown = () => {
           onChange={(e) => setcountry(e.target.value)}
           list="country"
           className={input}
+          readOnly={showCountries}
         />
         {countries && <DataList dataArray={countries} id="country" />}
       </form>

@@ -1,5 +1,6 @@
 .container {
   width: 50%;
+  min-width: 350px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -8,6 +9,7 @@
 
 .wrapper {
   width: 80%;
+  min-width: 350px;
   height: 70%;
   display: flex;
   justify-content: center;

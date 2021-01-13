@@ -9,7 +9,7 @@ const LeftView = () => {
     <div className={container}>
       <div className={wrapper}>
         <WelcomeNote />
-        <UserSearchBar />
+        <UserSearchBar contWidth="80%" />
         <UserRequestButton />
       </div>
     </div>

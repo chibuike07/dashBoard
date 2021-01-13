@@ -1,6 +1,10 @@
 .container {
-  width: 20%;
-  height: 3em;
+  width: 23%;
+  min-width: 120px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .input {
@@ -9,9 +13,10 @@
   border-radius: 30px;
   padding: 10px;
   border: none;
-  background-color: #eee;
+  background-color: rgb(226, 227, 236);
 }
 
 .input::placeholder {
   padding: 10%;
+  color: #000;
 }
