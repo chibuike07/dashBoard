@@ -2,14 +2,12 @@
   width: 80%;
   min-width: 300px;
   height: 15%;
-  display: flex;
-  align-items: center;
   padding: 2%;
 }
 
 .input {
   width: 30vw;
-  min-width: 270px;
+  min-width: 300px;
   height: 3rem;
   border-radius: 15px;
   padding: 25px;
@@ -18,8 +16,6 @@
   font-size: 16px;
   color: #fff;
   text-transform: capitalize;
-  display: flex;
-  align-items: center;
 }
 
 .input::placeholder {

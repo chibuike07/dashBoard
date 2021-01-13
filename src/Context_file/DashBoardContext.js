@@ -5,13 +5,12 @@ const DashBoardContext = React.createContext([{}, () => {}]);
 const DashBoardProvider = (props) => {
   const [Users, setUsers] = useState({
     usersList: [],
+    countries: [],
+    showCountries: false,
   });
 
   return (
-    <DashBoardContext.Provider
-      //assign the provider values
-      value={[Users, setUsers]}
-    >
+    <DashBoardContext.Provider value={[Users, setUsers]}>
       {props.children}
     </DashBoardContext.Provider>
   );

@@ -1,0 +1,34 @@
+.overallContainer {
+  width: 100%;
+  margin-right: 20px;
+  background-color: rgb(245, 245, 253);
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.tag {
+  width: 80%;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.tag h2 {
+  text-transform: capitalize;
+}
+
+.note {
+  width: 80%;
+  opacity: 0.3;
+}
+
+.container {
+  width: 85%;
+  min-height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
