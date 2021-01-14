@@ -19,7 +19,6 @@
 .contentDisplay {
   width: 100%;
   height: 75%;
-  background-color: red;
   border-radius: 20px;
   overflow-y: scroll;
 }

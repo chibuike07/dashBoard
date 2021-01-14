@@ -7,6 +7,9 @@ const DashBoardProvider = (props) => {
     usersList: [],
     countries: [],
     showCountries: false,
+    showUsersList: true,
+    tags: "all user",
+    specifiedUserData: [],
   });
 
   return (

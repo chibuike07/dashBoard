@@ -9,7 +9,7 @@ const UserLists = () => {
   useEffect(() => {
     const fetchUser = async () => {
       await axios
-        .get("https://randomuser.me/api/?results=10", {
+        .get("https://randomuser.me/api/?page=1&results=3", {
           "Content-Type": "application/json",
         })
         .then((res) => {
