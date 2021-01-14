@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { withRouter } from "react-router-dom";
 import DisplayUserCardStyles from "../../Styles/displayUserCard/DisplayUserCard.module.css";
 import Image from "../../Common/Image.component/Image";
 import Button from "../../Common/Button.component/Button";
@@ -10,8 +11,8 @@ import {
   faEnvelopeSquare,
 } from "@fortawesome/free-solid-svg-icons";
 
-const DisplayUsersCard = () => {
-  const [{ usersList }] = useContext(DashBoardContext);
+const DisplayUsersCard = ({ history }) => {
+  const [{ usersList, showUsersList }, setState] = useContext(DashBoardContext);
   const {
     container,
     wrapper,
@@ -27,6 +28,17 @@ const DisplayUsersCard = () => {
     btn,
     icon,
   } = DisplayUserCardStyles;
+
+  const handlePreviewSingleUser = (specifiedUserData) => {
+    // console.log("specifiedUserData", specifiedUserData);
+    setState((data) => ({
+      ...data,
+      specifiedUserData: specifiedUserData,
+      showUsersList: false,
+      tags: "user list",
+    }));
+  };
+
   const UsersListData = usersList ? (
     usersList
       .filter((v, i) => i <= 2)
@@ -34,6 +46,9 @@ const DisplayUsersCard = () => {
         (
           {
             name: { first, last },
+            name: names,
+            picture,
+            location,
             picture: { medium },
             location: {
               street: { number, name },
@@ -42,6 +57,7 @@ const DisplayUsersCard = () => {
             },
             email,
             cell,
+            ...remainingDetails
           },
           index
         ) => {
@@ -53,7 +69,7 @@ const DisplayUsersCard = () => {
               <div className={userInfo}>
                 <div className={title}>
                   <h3>
-                    {first} {last}
+                    {first && first} {last && last}
                   </h3>
                 </div>
                 <div className={residence}>
@@ -84,6 +100,16 @@ const DisplayUsersCard = () => {
                       className={icon}
                     />
                   }
+                  click={() =>
+                    handlePreviewSingleUser({
+                      names,
+                      picture,
+                      location,
+                      email,
+                      cell,
+                      ...remainingDetails,
+                    })
+                  }
                   className={btn}
                   backgroundColor=" rgb(48, 187, 181)"
                 />
@@ -97,11 +123,7 @@ const DisplayUsersCard = () => {
       <p>no data exist</p>
     </div>
   );
-  return (
-    // <ScrollBar style={{ width: "100%", height: "73%" }}>
-    <div className={container}>{UsersListData}</div>
-    // </ScrollBar>
-  );
+  return <div className={container}>{UsersListData}</div>;
 };
 
-export default DisplayUsersCard;
+export default withRouter(DisplayUsersCard);
