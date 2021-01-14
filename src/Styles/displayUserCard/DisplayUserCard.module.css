@@ -1,0 +1,105 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 3px 3px #ccc;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 10px;
+}
+
+.image {
+  width: 25%;
+  height: auto;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: circle(48% at 50%);
+}
+
+.img {
+  width: 100%;
+  min-width: 100px;
+  height: 100%;
+  outline: none;
+  border-radius: 50%;
+  border: 2px solid rgb(48, 187, 181);
+}
+
+.residence {
+  width: 20vw;
+  min-width: 200px;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.residence span {
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+.emailWrapper {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.emails {
+  width: max-content;
+  min-width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  margin-right: 1rem;
+}
+
+.emails span {
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+.phone {
+  width: 30%;
+  min-width: 70px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.phone span {
+  font-size: 8px;
+}
+
+.moreDetail {
+  width: 10%;
+  height: 2em;
+  transform: translateY(100%);
+}
+
+.btn {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
