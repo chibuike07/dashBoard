@@ -9,8 +9,17 @@
 .wrapper {
   width: 100%;
   min-width: 350px;
+  height: 90%;
   margin-right: 20px;
   background-color: rgb(245, 245, 253);
   height: 95%;
   border-radius: 20px;
+}
+
+.contentDisplay {
+  width: 100%;
+  height: 75%;
+  background-color: red;
+  border-radius: 20px;
+  overflow-y: scroll;
 }
