@@ -18,7 +18,7 @@ const UserLists = () => {
               return country;
             }
           );
-          console.log("res.data", res.data);
+
           setState((data) => ({
             ...data,
             usersList: res.data.results,

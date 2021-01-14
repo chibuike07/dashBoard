@@ -97,7 +97,11 @@ const DisplayUsersCard = () => {
       <p>no data exist</p>
     </div>
   );
-  return <div className={container}>{UsersListData}</div>;
+  return (
+    // <ScrollBar style={{ width: "100%", height: "73%" }}>
+    <div className={container}>{UsersListData}</div>
+    // </ScrollBar>
+  );
 };
 
 export default DisplayUsersCard;
