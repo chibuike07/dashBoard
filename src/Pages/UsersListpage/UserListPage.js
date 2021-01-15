@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import UserLists from "../../Components/UserLists/UserLists";
 import UserListPageStyles from "../../Styles/UserLists/UserListPage.module.css";
 import DisplayUsersCard from "../../Components/DisplayUserListComponent/DisplayUsersCard";
-
 import PreviewUser from "../../Components/DisplaySpecifiedUser/PreviewUser";
 import { DashBoardContext } from "../../Context_file/DashBoardContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,6 +11,7 @@ import {
   faCloudDownloadAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import Button from "../../Common/Button.component/Button";
+import { CSVLink } from "react-csv";
 
 const UserListPage = () => {
   const {
@@ -23,7 +23,10 @@ const UserListPage = () => {
     button,
     btn,
   } = UserListPageStyles;
-  const [{ showUsersList, page }, setState] = useContext(DashBoardContext);
+  const [
+    { showUsersList, page, usersList, tags, specifiedUserData },
+    setState,
+  ] = useContext(DashBoardContext);
 
   const handlepagination = (id) => {
     switch (id) {
@@ -60,7 +63,15 @@ const UserListPage = () => {
           <div className={belowWrapper}>
             <div className={download}>
               <span>
-                <FontAwesomeIcon icon={faCloudDownloadAlt} /> download result
+                <CSVLink
+                  data={specifiedUserData ? [specifiedUserData] : usersList}
+                  filename={`${tags}.csv`}
+                  className="btn btn-primary"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faCloudDownloadAlt} color="#fff" />
+                  download result
+                </CSVLink>
               </span>
             </div>
             <div className={button}>
