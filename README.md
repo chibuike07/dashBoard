@@ -1,3 +1,31 @@
+# Video link of the application
+
+https://res.cloudinary.com/hobbyluv07/video/upload/v1610752873/My%20working%20photos/Screencast_from_16-01-2021_00_14_58_lbnhmn.webm
+
+Tools used in this project
+
+# Fortawesome
+
+This is a tool used to add icons to a react project
+
+# axios
+
+This is tool using to perform a request from the server
+
+# React CSVLink
+
+This is a react tool used in downloading of a file into a csv extension format
+
+# React-router-dom
+
+This is a react tools for navigating across pages
+
+# Jest
+
+This is a tool used to run a test in any react project
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -13,6 +13,8 @@ const DashBoardProvider = (props) => {
     results: 10,
     page: 1,
     handleDownColor: true,
+    showPreview: false,
+    showAllList: true,
     specifiedUserData: [],
   });
 

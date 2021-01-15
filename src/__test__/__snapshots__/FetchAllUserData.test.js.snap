@@ -1,0 +1,566 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should have all userlist data 1`] = `
+Array [
+  Object {
+    "cell": "(038)-290-2103",
+    "dob": Object {
+      "age": 74,
+      "date": "1947-08-14T03:27:26.149Z",
+    },
+    "email": "wies.vanhattum@example.com",
+    "gender": "female",
+    "id": Object {
+      "name": "BSN",
+      "value": "69997508",
+    },
+    "location": Object {
+      "city": "Kraggenburg",
+      "coordinates": Object {
+        "latitude": "45.6283",
+        "longitude": "117.4066",
+      },
+      "country": "Netherlands",
+      "postcode": 23577,
+      "state": "Zeeland",
+      "street": Object {
+        "name": "Kastanje",
+        "number": 7602,
+      },
+      "timezone": Object {
+        "description": "Baghdad, Riyadh, Moscow, St. Petersburg",
+        "offset": "+3:00",
+      },
+    },
+    "login": Object {
+      "md5": "505bdb39ae28cad3aaa8d968a48e1a90",
+      "password": "chester1",
+      "salt": "7bNkYFt7",
+      "sha1": "0e9aa52efcf9e164de504fb42cb3394fce38929c",
+      "sha256": "8bf92ef9328803f74262565c793693d86588a5429ea03ad6d0065965a3df4df9",
+      "username": "bluecat372",
+      "uuid": "fd98ce7d-2f0a-42c8-8f33-2405e994a564",
+    },
+    "name": Object {
+      "first": "Wies",
+      "last": "Van Hattum",
+      "title": "Mrs",
+    },
+    "nat": "NL",
+    "phone": "(562)-633-3314",
+    "picture": Object {
+      "large": "https://randomuser.me/api/portraits/women/85.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/85.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/85.jpg",
+    },
+    "registered": Object {
+      "age": 14,
+      "date": "2007-11-17T03:37:02.395Z",
+    },
+  },
+  Object {
+    "cell": "78214345",
+    "dob": Object {
+      "age": 76,
+      "date": "1945-11-10T07:05:14.893Z",
+    },
+    "email": "oliver.moller@example.com",
+    "gender": "male",
+    "id": Object {
+      "name": "CPR",
+      "value": "101145-8446",
+    },
+    "location": Object {
+      "city": "Rødvig Stevns",
+      "coordinates": Object {
+        "latitude": "-34.7868",
+        "longitude": "-137.9123",
+      },
+      "country": "Denmark",
+      "postcode": 37580,
+      "state": "Nordjylland",
+      "street": Object {
+        "name": "Solbakkevej",
+        "number": 8327,
+      },
+      "timezone": Object {
+        "description": "Eastern Australia, Guam, Vladivostok",
+        "offset": "+10:00",
+      },
+    },
+    "login": Object {
+      "md5": "3f7e96bb851013f765478eb70c6b289b",
+      "password": "kings",
+      "salt": "ZJOOFIPs",
+      "sha1": "cb6060a9d1d813b024e026f32def76a980bfaf2b",
+      "sha256": "815b74633f5dab944342fb62454cb8d4b4dad6ad0f9aeecb48a37cd35e619fd3",
+      "username": "tinyrabbit221",
+      "uuid": "705d3f03-204a-4eff-880c-46b8fdcb94d9",
+    },
+    "name": Object {
+      "first": "Oliver",
+      "last": "Møller",
+      "title": "Mr",
+    },
+    "nat": "DK",
+    "phone": "22291213",
+    "picture": Object {
+      "large": "https://randomuser.me/api/portraits/men/98.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/98.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/98.jpg",
+    },
+    "registered": Object {
+      "age": 10,
+      "date": "2011-04-23T21:24:23.685Z",
+    },
+  },
+  Object {
+    "cell": "46609402",
+    "dob": Object {
+      "age": 37,
+      "date": "1984-10-05T13:06:44.728Z",
+    },
+    "email": "oskar.lund@example.com",
+    "gender": "male",
+    "id": Object {
+      "name": "FN",
+      "value": "05108426596",
+    },
+    "location": Object {
+      "city": "Minnesund",
+      "coordinates": Object {
+        "latitude": "26.9611",
+        "longitude": "55.4483",
+      },
+      "country": "Norway",
+      "postcode": "4691",
+      "state": "Description",
+      "street": Object {
+        "name": "Sem Sælands vei",
+        "number": 6734,
+      },
+      "timezone": Object {
+        "description": "Beijing, Perth, Singapore, Hong Kong",
+        "offset": "+8:00",
+      },
+    },
+    "login": Object {
+      "md5": "bc0e3bd60ce4ee31735e55b675d1697f",
+      "password": "drowssap",
+      "salt": "02vUB7AJ",
+      "sha1": "79c5b30d8dbff5a2156e15d7cafdd61c80bef67f",
+      "sha256": "308effa8b4c449bd1bb0a0d8b7857262f4d20ca4869ffb75332fd7fafc3b5e81",
+      "username": "greenzebra263",
+      "uuid": "89a48ec2-08f3-444f-9435-cd317578e779",
+    },
+    "name": Object {
+      "first": "Oskar",
+      "last": "Lund",
+      "title": "Mr",
+    },
+    "nat": "NO",
+    "phone": "81121114",
+    "picture": Object {
+      "large": "https://randomuser.me/api/portraits/men/88.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/88.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/88.jpg",
+    },
+    "registered": Object {
+      "age": 11,
+      "date": "2010-01-27T06:23:48.335Z",
+    },
+  },
+  Object {
+    "cell": "0474-904-143",
+    "dob": Object {
+      "age": 77,
+      "date": "1944-09-11T07:50:44.595Z",
+    },
+    "email": "katrina.lewis@example.com",
+    "gender": "female",
+    "id": Object {
+      "name": "TFN",
+      "value": "701738768",
+    },
+    "location": Object {
+      "city": "Bowral",
+      "coordinates": Object {
+        "latitude": "57.7090",
+        "longitude": "-163.8083",
+      },
+      "country": "Australia",
+      "postcode": 7791,
+      "state": "Victoria",
+      "street": Object {
+        "name": "E Pecan St",
+        "number": 7715,
+      },
+      "timezone": Object {
+        "description": "Ekaterinburg, Islamabad, Karachi, Tashkent",
+        "offset": "+5:00",
+      },
+    },
+    "login": Object {
+      "md5": "7b766e6397873125360590da66af5dee",
+      "password": "dawgs",
+      "salt": "v4KAgOxr",
+      "sha1": "14fea6850882e26180f87414f7cfb23f5109501c",
+      "sha256": "c0ba89ac8dfb5c067ebebd7002e12dede8fb9da04b87d6d64ae60459e0f9cdcd",
+      "username": "happymouse106",
+      "uuid": "b8dab833-fd5c-47e6-956f-2b7ed1131126",
+    },
+    "name": Object {
+      "first": "Katrina",
+      "last": "Lewis",
+      "title": "Miss",
+    },
+    "nat": "AU",
+    "phone": "07-9214-5849",
+    "picture": Object {
+      "large": "https://randomuser.me/api/portraits/women/42.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/42.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/42.jpg",
+    },
+    "registered": Object {
+      "age": 4,
+      "date": "2017-05-04T10:38:47.202Z",
+    },
+  },
+  Object {
+    "cell": "0172-9441343",
+    "dob": Object {
+      "age": 41,
+      "date": "1980-08-24T12:02:34.718Z",
+    },
+    "email": "julie.hohl@example.com",
+    "gender": "female",
+    "id": Object {
+      "name": "",
+      "value": null,
+    },
+    "location": Object {
+      "city": "Biedenkopf",
+      "coordinates": Object {
+        "latitude": "-85.9104",
+        "longitude": "50.5897",
+      },
+      "country": "Germany",
+      "postcode": 97397,
+      "state": "Nordrhein-Westfalen",
+      "street": Object {
+        "name": "Talstraße",
+        "number": 2830,
+      },
+      "timezone": Object {
+        "description": "Almaty, Dhaka, Colombo",
+        "offset": "+6:00",
+      },
+    },
+    "login": Object {
+      "md5": "19a16c6d18a8694ea6aa1c3cb9047d85",
+      "password": "bolton",
+      "salt": "YwetEHvc",
+      "sha1": "00b419219a685a024c9d53c69265872c84cd063b",
+      "sha256": "ebfa6371967d6dcda7a0b6ade379b7d93ebcfe723edfb7c6587063b35c107a42",
+      "username": "organicbird920",
+      "uuid": "a0f71478-0b88-40bc-b2dc-5e961a6446a0",
+    },
+    "name": Object {
+      "first": "Julie",
+      "last": "Hohl",
+      "title": "Mrs",
+    },
+    "nat": "DE",
+    "phone": "0644-3374385",
+    "picture": Object {
+      "large": "https://randomuser.me/api/portraits/women/48.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/48.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/48.jpg",
+    },
+    "registered": Object {
+      "age": 11,
+      "date": "2010-04-26T20:53:13.864Z",
+    },
+  },
+  Object {
+    "cell": "195-792-4281",
+    "dob": Object {
+      "age": 71,
+      "date": "1950-03-03T17:38:53.476Z",
+    },
+    "email": "philippe.jean-baptiste@example.com",
+    "gender": "male",
+    "id": Object {
+      "name": "",
+      "value": null,
+    },
+    "location": Object {
+      "city": "Aylmer",
+      "coordinates": Object {
+        "latitude": "-89.8490",
+        "longitude": "130.7928",
+      },
+      "country": "Canada",
+      "postcode": "B9U 9N2",
+      "state": "Yukon",
+      "street": Object {
+        "name": "Balmoral St",
+        "number": 4900,
+      },
+      "timezone": Object {
+        "description": "Bombay, Calcutta, Madras, New Delhi",
+        "offset": "+5:30",
+      },
+    },
+    "login": Object {
+      "md5": "a3f6df517fdc71b0b11a32d016c46313",
+      "password": "rabbit",
+      "salt": "CYFCRb1f",
+      "sha1": "285c1ab0ac17107d1b87d3c96e69bc60098bf796",
+      "sha256": "804383d063be6a699bb9e826870b923d47800eebed4e77b4c112f60db40fbbe8",
+      "username": "crazyfrog703",
+      "uuid": "7cf3268d-6fb7-4e17-976c-12b5ebacc498",
+    },
+    "name": Object {
+      "first": "Philippe",
+      "last": "Jean-Baptiste",
+      "title": "Mr",
+    },
+    "nat": "CA",
+    "phone": "647-339-9487",
+    "picture": Object {
+      "large": "https://randomuser.me/api/portraits/men/42.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/42.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/42.jpg",
+    },
+    "registered": Object {
+      "age": 8,
+      "date": "2013-11-18T08:47:25.505Z",
+    },
+  },
+  Object {
+    "cell": "36728947",
+    "dob": Object {
+      "age": 25,
+      "date": "1996-11-05T05:43:35.707Z",
+    },
+    "email": "frida.hansen@example.com",
+    "gender": "female",
+    "id": Object {
+      "name": "CPR",
+      "value": "051196-7531",
+    },
+    "location": Object {
+      "city": "Sønder Stenderup",
+      "coordinates": Object {
+        "latitude": "-25.5677",
+        "longitude": "16.1238",
+      },
+      "country": "Denmark",
+      "postcode": 36959,
+      "state": "Sjælland",
+      "street": Object {
+        "name": "Nyborgvej",
+        "number": 2515,
+      },
+      "timezone": Object {
+        "description": "Ekaterinburg, Islamabad, Karachi, Tashkent",
+        "offset": "+5:00",
+      },
+    },
+    "login": Object {
+      "md5": "f0b11298ce38b3bd3a2f1d116f62bc6a",
+      "password": "1977",
+      "salt": "HFYCxzsD",
+      "sha1": "5a0b13267eefaa8b5c86dc309f5afc9fff88e405",
+      "sha256": "e442b501c697838b8ceef6630fadf147fd74314178609d8de213a9c0d5034c09",
+      "username": "blackgorilla289",
+      "uuid": "c4e19fd5-1578-4502-91ea-78a6766b76d8",
+    },
+    "name": Object {
+      "first": "Frida",
+      "last": "Hansen",
+      "title": "Mrs",
+    },
+    "nat": "DK",
+    "phone": "11251205",
+    "picture": Object {
+      "large": "https://randomuser.me/api/portraits/women/0.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/0.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/0.jpg",
+    },
+    "registered": Object {
+      "age": 13,
+      "date": "2008-09-30T03:22:03.257Z",
+    },
+  },
+  Object {
+    "cell": "(180)-178-5849",
+    "dob": Object {
+      "age": 45,
+      "date": "1976-01-23T16:00:33.218Z",
+    },
+    "email": "marcia.castro@example.com",
+    "gender": "female",
+    "id": Object {
+      "name": "SSN",
+      "value": "613-24-0120",
+    },
+    "location": Object {
+      "city": "Palm Bay",
+      "coordinates": Object {
+        "latitude": "-50.7542",
+        "longitude": "152.4698",
+      },
+      "country": "United States",
+      "postcode": 96284,
+      "state": "Ohio",
+      "street": Object {
+        "name": "Ash Dr",
+        "number": 2655,
+      },
+      "timezone": Object {
+        "description": "Baghdad, Riyadh, Moscow, St. Petersburg",
+        "offset": "+3:00",
+      },
+    },
+    "login": Object {
+      "md5": "cd0d6953e1c59fafd1191f3f3cd4a3f4",
+      "password": "willard",
+      "salt": "HIeN4QCK",
+      "sha1": "c20933310333f77f68c6914e71a52062f3ce9c56",
+      "sha256": "9f67b69fb050a4b21304fd232a7f1f6044407351defb4a7926525552589dc519",
+      "username": "bluezebra697",
+      "uuid": "77256512-c6b7-420f-87c8-7b0d1b44a1a6",
+    },
+    "name": Object {
+      "first": "Marcia",
+      "last": "Castro",
+      "title": "Mrs",
+    },
+    "nat": "US",
+    "phone": "(013)-213-4965",
+    "picture": Object {
+      "large": "https://randomuser.me/api/portraits/women/96.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/96.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/96.jpg",
+    },
+    "registered": Object {
+      "age": 17,
+      "date": "2004-10-26T03:36:52.763Z",
+    },
+  },
+  Object {
+    "cell": "0174-6158946",
+    "dob": Object {
+      "age": 57,
+      "date": "1964-11-11T18:18:04.937Z",
+    },
+    "email": "kira.weingartner@example.com",
+    "gender": "female",
+    "id": Object {
+      "name": "",
+      "value": null,
+    },
+    "location": Object {
+      "city": "Oelsnitz/Erzgeb.",
+      "coordinates": Object {
+        "latitude": "27.3453",
+        "longitude": "-13.8319",
+      },
+      "country": "Germany",
+      "postcode": 72868,
+      "state": "Sachsen",
+      "street": Object {
+        "name": "Bachstraße",
+        "number": 6277,
+      },
+      "timezone": Object {
+        "description": "Kathmandu",
+        "offset": "+5:45",
+      },
+    },
+    "login": Object {
+      "md5": "7bbf4d550a64a4196b80023ae99836e3",
+      "password": "spike",
+      "salt": "QKzUETsC",
+      "sha1": "2f353928274045f664eb034d94739a28eec90e6b",
+      "sha256": "88faa204721c0a340591c9b9856a632cc368d1971befd1fbadd8d0ac37d764a4",
+      "username": "smallswan519",
+      "uuid": "c55ff6eb-2f8c-4f37-8d21-ecf845d529b4",
+    },
+    "name": Object {
+      "first": "Kira",
+      "last": "Weingärtner",
+      "title": "Miss",
+    },
+    "nat": "DE",
+    "phone": "0159-6963659",
+    "picture": Object {
+      "large": "https://randomuser.me/api/portraits/women/15.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/15.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/15.jpg",
+    },
+    "registered": Object {
+      "age": 9,
+      "date": "2012-01-10T06:18:10.485Z",
+    },
+  },
+  Object {
+    "cell": "0499-991-675",
+    "dob": Object {
+      "age": 47,
+      "date": "1974-05-03T11:01:56.454Z",
+    },
+    "email": "vera.torres@example.com",
+    "gender": "female",
+    "id": Object {
+      "name": "TFN",
+      "value": "182428983",
+    },
+    "location": Object {
+      "city": "Bowral",
+      "coordinates": Object {
+        "latitude": "12.4554",
+        "longitude": "132.5758",
+      },
+      "country": "Australia",
+      "postcode": 5492,
+      "state": "Northern Territory",
+      "street": Object {
+        "name": "Woodland St",
+        "number": 5435,
+      },
+      "timezone": Object {
+        "description": "Abu Dhabi, Muscat, Baku, Tbilisi",
+        "offset": "+4:00",
+      },
+    },
+    "login": Object {
+      "md5": "bdae028fc7f1f92a26b6d45b2187a1a6",
+      "password": "charlie",
+      "salt": "VrojG0vI",
+      "sha1": "9f06df8276f2694ed73eff7a1d3aee4683778f51",
+      "sha256": "0d921c477bebb30d37e116ca26bcb7f5b2887fa3892e818a1b26cee57d31b576",
+      "username": "bigelephant236",
+      "uuid": "d488d756-4702-463f-9021-38231859c3ef",
+    },
+    "name": Object {
+      "first": "Vera",
+      "last": "Torres",
+      "title": "Miss",
+    },
+    "nat": "AU",
+    "phone": "05-5801-3969",
+    "picture": Object {
+      "large": "https://randomuser.me/api/portraits/women/75.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/75.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/75.jpg",
+    },
+    "registered": Object {
+      "age": 11,
+      "date": "2010-10-23T01:21:20.397Z",
+    },
+  },
+]
+`;

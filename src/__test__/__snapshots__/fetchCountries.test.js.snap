@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should includes countries 1`] = `
+Array [
+  "Brazil",
+  "Netherlands",
+  "Australia",
+  "France",
+  "Turkey",
+  "Australia",
+  "New Zealand",
+  "Ireland",
+  "United Kingdom",
+  "Netherlands",
+]
+`;
