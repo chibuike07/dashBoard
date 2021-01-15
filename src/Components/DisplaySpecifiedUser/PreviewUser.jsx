@@ -11,7 +11,7 @@ import {
   faEnvelopeSquare,
 } from "@fortawesome/free-solid-svg-icons";
 
-const PreviewUser = () => {
+const PreviewUser = ({ history }) => {
   const [{ specifiedUserData }] = useContext(DashBoardContext);
   const {
     allCont,
@@ -106,10 +106,11 @@ const PreviewUser = () => {
       <p>no data to display</p>
     </div>
   );
+
   return (
     <div className={allCont}>
       <div className={arrow}>
-        <span>
+        <span onClickCapture={() => history.go({ delta: 1 })}>
           <FontAwesomeIcon
             icon={faArrowLeft}
             className={icons}

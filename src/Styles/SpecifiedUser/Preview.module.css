@@ -1,5 +1,15 @@
 .allCont {
-  /* margin-top: 1rem; */
+  animation: slide 1s ease-in;
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(15%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
 }
 
 .container {
@@ -21,6 +31,7 @@
 .icons {
   font-size: 13px;
   margin-right: 0.3rem;
+  cursor: pointer;
 }
 
 .text {
