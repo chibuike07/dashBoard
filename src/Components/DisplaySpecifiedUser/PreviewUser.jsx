@@ -34,10 +34,11 @@ const PreviewUser = ({ history }) => {
   const handlePreviousPage = () => {
     setState((data) => ({
       ...data,
-      specifiedUserData: [],
-      handleDownColor: false,
+      tags: "all users",
+      handleDownColor: true,
+      showPreview: false,
+      showAllList: true,
     }));
-    history.go({ delta: 1 });
   };
   const displayUserDetail = specifiedUserData ? (
     [specifiedUserData].map(

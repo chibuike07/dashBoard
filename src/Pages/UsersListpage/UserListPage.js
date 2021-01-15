@@ -25,12 +25,13 @@ const UserListPage = () => {
   } = UserListPageStyles;
   const [
     {
-      showUsersList,
+      showAllList,
       page,
       usersList,
       tags,
       specifiedUserData,
       handleDownColor,
+      showPreview,
     },
     setState,
   ] = useContext(DashBoardContext);
@@ -66,7 +67,8 @@ const UserListPage = () => {
     <div className={container}>
       <div className={wrapper}>
         <UserLists />
-        {showUsersList ? <DisplayUsersCard /> : <PreviewUser />}
+        {showAllList && <DisplayUsersCard />}
+        {showPreview && <PreviewUser />}
         <div className={belowButton}>
           <div className={belowWrapper}>
             <div
