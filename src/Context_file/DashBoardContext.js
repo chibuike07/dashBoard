@@ -10,6 +10,8 @@ const DashBoardProvider = (props) => {
     showUsersList: true,
     tags: "all users",
     gender: "all user",
+    results: 10,
+    page: 1,
     specifiedUserData: [],
   });
 

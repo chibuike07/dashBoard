@@ -4,14 +4,17 @@ import { DashBoardContext } from "../../Context_file/DashBoardContext";
 import TopViews from "./TopViews";
 
 const UserLists = () => {
-  const [{ gender }, setState] = useContext(DashBoardContext);
+  const [{ gender, page, results }, setState] = useContext(DashBoardContext);
 
   useEffect(() => {
     const fetchUser = async () => {
       await axios
-        .get(`https://randomuser.me/api/?page=1&results=3&gender=${gender}`, {
-          "Content-Type": "application/json",
-        })
+        .get(
+          `https://randomuser.me/api/?page=${page}&results=${results}&gender=${gender}`,
+          {
+            "Content-Type": "application/json",
+          }
+        )
         .then((res) => {
           const countries = res.data.results.map(
             ({ location: { country } }) => {
@@ -32,7 +35,7 @@ const UserLists = () => {
         );
     };
     fetchUser();
-  }, [setState, gender]);
+  }, [setState, gender, page, results]);
   return (
     <div>
       <TopViews />

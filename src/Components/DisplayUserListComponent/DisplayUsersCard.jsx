@@ -11,8 +11,8 @@ import {
   faEnvelopeSquare,
 } from "@fortawesome/free-solid-svg-icons";
 
-const DisplayUsersCard = ({ history }) => {
-  const [{ usersList, showUsersList }, setState] = useContext(DashBoardContext);
+const DisplayUsersCard = () => {
+  const [{ usersList }, setState] = useContext(DashBoardContext);
   const {
     container,
     wrapper,
@@ -30,7 +30,6 @@ const DisplayUsersCard = ({ history }) => {
   } = DisplayUserCardStyles;
 
   const handlePreviewSingleUser = (specifiedUserData) => {
-    // console.log("specifiedUserData", specifiedUserData);
     setState((data) => ({
       ...data,
       specifiedUserData: specifiedUserData,
@@ -40,84 +39,82 @@ const DisplayUsersCard = ({ history }) => {
   };
 
   const UsersListData = usersList ? (
-    usersList
-      .filter((v, i) => i <= 2)
-      .map(
-        (
-          {
-            name: { first, last },
-            name: names,
-            picture,
-            location,
-            picture: { medium },
-            location: {
-              street: { number, name },
-              city,
-              state,
-            },
-            email,
-            cell,
-            ...remainingDetails
+    usersList.map(
+      (
+        {
+          name: { first, last },
+          name: names,
+          picture,
+          location,
+          picture: { medium },
+          location: {
+            street: { number, name },
+            city,
+            state,
           },
-          index
-        ) => {
-          return (
-            <div className={wrapper} key={index}>
-              <div className={image}>
-                <Image src={medium} alt={first} className={img} />
+          email,
+          cell,
+          ...remainingDetails
+        },
+        index
+      ) => {
+        return (
+          <div className={wrapper} key={index}>
+            <div className={image}>
+              <Image src={medium} alt={first} className={img} />
+            </div>
+            <div className={userInfo}>
+              <div className={title}>
+                <h3>
+                  {first && first} {last && last}
+                </h3>
               </div>
-              <div className={userInfo}>
-                <div className={title}>
-                  <h3>
-                    {first && first} {last && last}
-                  </h3>
-                </div>
-                <div className={residence}>
+              <div className={residence}>
+                <span>
+                  {number} {name}, {city}, {state}
+                </span>
+              </div>
+              <div className={emailWrapper}>
+                <div className={emails}>
                   <span>
-                    {number} {name}, {city}, {state}
+                    <FontAwesomeIcon icon={faEnvelopeSquare} />
                   </span>
+                  <span>{email}</span>
                 </div>
-                <div className={emailWrapper}>
-                  <div className={emails}>
-                    <span>
-                      <FontAwesomeIcon icon={faEnvelopeSquare} />
-                    </span>
-                    <span>{email}</span>
-                  </div>
-                  <div className={phone}>
-                    <span>
-                      <FontAwesomeIcon icon={faPhone} rotation={90} />
-                    </span>
-                    <span>{cell}</span>
-                  </div>
+                <div className={phone}>
+                  <span>
+                    <FontAwesomeIcon icon={faPhone} rotation={90} />
+                  </span>
+                  <span>{cell}</span>
                 </div>
-              </div>
-              <div className={moreDetail}>
-                <Button
-                  text={
-                    <FontAwesomeIcon
-                      icon={faLongArrowAltRight}
-                      className={icon}
-                    />
-                  }
-                  click={() =>
-                    handlePreviewSingleUser({
-                      names,
-                      picture,
-                      location,
-                      email,
-                      cell,
-                      ...remainingDetails,
-                    })
-                  }
-                  className={btn}
-                  backgroundColor=" rgb(48, 187, 181)"
-                />
               </div>
             </div>
-          );
-        }
-      )
+            <div className={moreDetail}>
+              <Button
+                text={
+                  <FontAwesomeIcon
+                    icon={faLongArrowAltRight}
+                    className={icon}
+                  />
+                }
+                click={() =>
+                  handlePreviewSingleUser({
+                    names,
+                    picture,
+                    location,
+                    email,
+                    cell,
+                    ...remainingDetails,
+                  })
+                }
+                className={btn}
+                backgroundColor=" rgb(48, 187, 181)"
+              />
+            </div>
+          </div>
+        );
+      }
+    )
   ) : (
     <div>
       <p>no data exist</p>
