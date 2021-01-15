@@ -8,6 +8,8 @@ test("should have all userlist data", async () => {
     }
   ).then((res) => {
     const result = res.data.results;
+    expect(result).toEqual(expect.arrayContaining([]));
+
     expect(result).toMatchSnapshot();
   });
 });
