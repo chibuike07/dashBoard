@@ -12,7 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const PreviewUser = ({ history }) => {
-  const [{ specifiedUserData }] = useContext(DashBoardContext);
+  const [{ specifiedUserData }, setState] = useContext(DashBoardContext);
   const {
     allCont,
     container,
@@ -31,6 +31,14 @@ const PreviewUser = ({ history }) => {
     mobPhone,
   } = PreviewStyles;
 
+  const handlePreviousPage = () => {
+    setState((data) => ({
+      ...data,
+      specifiedUserData: [],
+      handleDownColor: false,
+    }));
+    history.go({ delta: 1 });
+  };
   const displayUserDetail = specifiedUserData ? (
     [specifiedUserData].map(
       (
@@ -110,7 +118,7 @@ const PreviewUser = ({ history }) => {
   return (
     <div className={allCont}>
       <div className={arrow}>
-        <span onClickCapture={() => history.go({ delta: 1 })}>
+        <span onClickCapture={handlePreviousPage}>
           <FontAwesomeIcon
             icon={faArrowLeft}
             className={icons}

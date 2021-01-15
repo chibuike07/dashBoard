@@ -35,6 +35,7 @@ const DisplayUsersCard = () => {
       specifiedUserData: specifiedUserData,
       showUsersList: false,
       tags: "user list",
+      handleDownColor: false,
     }));
   };
 

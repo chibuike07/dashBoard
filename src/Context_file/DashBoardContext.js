@@ -12,7 +12,7 @@ const DashBoardProvider = (props) => {
     gender: "all user",
     results: 10,
     page: 1,
-    format: "json",
+    handleDownColor: true,
     specifiedUserData: [],
   });
 

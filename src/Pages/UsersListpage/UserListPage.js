@@ -24,7 +24,14 @@ const UserListPage = () => {
     btn,
   } = UserListPageStyles;
   const [
-    { showUsersList, page, usersList, tags, specifiedUserData },
+    {
+      showUsersList,
+      page,
+      usersList,
+      tags,
+      specifiedUserData,
+      handleDownColor,
+    },
     setState,
   ] = useContext(DashBoardContext);
 
@@ -54,6 +61,7 @@ const UserListPage = () => {
         break;
     }
   };
+
   return (
     <div className={container}>
       <div className={wrapper}>
@@ -61,7 +69,16 @@ const UserListPage = () => {
         {showUsersList ? <DisplayUsersCard /> : <PreviewUser />}
         <div className={belowButton}>
           <div className={belowWrapper}>
-            <div className={download}>
+            <div
+              className={download}
+              style={{
+                backgroundColor: handleDownColor
+                  ? "rgb(123, 106, 194)"
+                  : "rgb(196, 175, 230)",
+                // :
+              }}
+            >
+              <FontAwesomeIcon icon={faCloudDownloadAlt} color="#fff" />
               <span>
                 <CSVLink
                   data={specifiedUserData ? [specifiedUserData] : usersList}
@@ -69,7 +86,6 @@ const UserListPage = () => {
                   className="btn btn-primary"
                   target="_blank"
                 >
-                  <FontAwesomeIcon icon={faCloudDownloadAlt} color="#fff" />
                   download result
                 </CSVLink>
               </span>
