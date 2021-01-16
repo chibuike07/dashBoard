@@ -4,7 +4,7 @@ https://res.cloudinary.com/hobbyluv07/video/upload/v1610752873/My%20working%20ph
 
 # deployment links to netlify
 
-https://chibuike07-react-dashboard.netlify.app/
+https://chibuike07-react-dashboard.netlify.app
 
 Tools used in this project
 
