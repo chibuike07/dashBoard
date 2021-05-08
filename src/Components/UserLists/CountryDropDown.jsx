@@ -6,8 +6,25 @@ import { DashBoardContext } from "../../Context_file/DashBoardContext";
 
 const CountryDropDown = () => {
   const { container, form, input } = CountryDropDownStyles;
-  const [{ countries, showCountries }] = useContext(DashBoardContext);
+  const [{ countries, showCountries }, setState] = useContext(DashBoardContext);
+
   const [country, setcountry] = useState("");
+
+  const handleFindUserByCountry = async (nationality) => {
+    setcountry(nationality);
+
+    if (countries[nationality]) {
+      await setState((data) => ({
+        ...data,
+        nationality: countries[nationality].toLowerCase(),
+      }));
+    } else {
+      await setState((data) => ({
+        ...data,
+        nationality: "",
+      }));
+    }
+  };
 
   return (
     <div className={container}>
@@ -17,12 +34,14 @@ const CountryDropDown = () => {
           placeholder="country"
           name="country"
           value={country}
-          onChange={(e) => setcountry(e.target.value)}
+          onChange={(e) => handleFindUserByCountry(e.target.value)}
           list="country"
           className={input}
           readOnly={showCountries}
         />
-        {countries && <DataList dataArray={countries} id="country" />}
+        {countries && (
+          <DataList dataArray={Object.keys(countries)} id="country" />
+        )}
       </form>
     </div>
   );

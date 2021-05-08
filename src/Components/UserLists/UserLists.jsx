@@ -4,7 +4,7 @@ import { DashBoardContext } from "../../Context_file/DashBoardContext";
 import TopViews from "./TopViews";
 
 const UserLists = () => {
-  const [{ gender, page, results, name = "Costa" }, setState] = useContext(
+  const [{ gender, page, results, nationality }, setState] = useContext(
     DashBoardContext
   );
 
@@ -12,17 +12,16 @@ const UserLists = () => {
     const fetchUser = async () => {
       await axios
         .get(
-          `https://randomuser.me/api/?page=${page}&results=${results}&gender=${gender}&noinfo`,
+          `https://randomuser.me/api/?nat=${nationality}&page=${page}&results=${results}&gender=${gender}&noinfo`,
           {
             "Content-Type": "application/json",
           }
         )
         .then((res) => {
-          const countries = res.data.results.map(
-            ({ location: { country } }) => {
-              return country;
-            }
-          );
+          let countries = {};
+          res.data.results.map(({ location: { country }, nat }) => {
+            return (countries[country] = nat);
+          });
 
           setState((data) => ({
             ...data,
@@ -38,7 +37,7 @@ const UserLists = () => {
         );
     };
     fetchUser();
-  }, [setState, gender, page, results]);
+  }, [setState, gender, page, results, nationality]);
   return (
     <div>
       <TopViews />
