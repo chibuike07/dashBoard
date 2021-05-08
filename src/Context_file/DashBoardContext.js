@@ -5,6 +5,7 @@ const DashBoardContext = React.createContext([{}, () => {}]);
 const DashBoardProvider = (props) => {
   const [Users, setUsers] = useState({
     usersList: [],
+    clonedUsersList: [],
     countries: [],
     showCountries: false,
     showUsersList: true,

@@ -13,7 +13,11 @@ const UserSearchBar = () => {
   useEffect(() => {
     const handleSearchGender = () => {
       if (findUser === "") {
-        setState((data) => ({ ...data, tags: "all users" }));
+        setState((data) => ({
+          ...data,
+          gender: "all users",
+          tags: "all users",
+        }));
       } else {
         setState((data) => ({
           ...data,
@@ -29,7 +33,6 @@ const UserSearchBar = () => {
 
   return (
     <div className={container}>
-      <h2>hello</h2>
       <Input
         icon={
           <FontAwesomeIcon

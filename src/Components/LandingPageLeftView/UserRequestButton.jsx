@@ -20,7 +20,6 @@ const UserRequestButton = () => {
   const [, setState] = useContext(DashBoardContext);
 
   const handleGender = (id) => {
-    console.log(id);
     switch (id) {
       case "male":
         setState((data) => ({

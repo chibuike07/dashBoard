@@ -4,7 +4,9 @@ import { DashBoardContext } from "../../Context_file/DashBoardContext";
 import TopViews from "./TopViews";
 
 const UserLists = () => {
-  const [{ gender, page, results }, setState] = useContext(DashBoardContext);
+  const [{ gender, page, results, name = "Costa" }, setState] = useContext(
+    DashBoardContext
+  );
 
   useEffect(() => {
     const fetchUser = async () => {
@@ -25,6 +27,7 @@ const UserLists = () => {
           setState((data) => ({
             ...data,
             usersList: res.data.results,
+            clonedUsersList: res.data.results,
             countries: countries,
           }));
         })
