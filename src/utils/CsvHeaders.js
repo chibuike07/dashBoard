@@ -1,0 +1,15 @@
+export const headers = [
+  { label: "title", key: "title" },
+  { label: "first", key: "first" },
+  { label: "last", key: "last" },
+  { label: "gender", key: "gender" },
+  { label: "age", key: "age" },
+  { label: "phone", key: "phone" },
+  { label: "email", key: "email" },
+  { label: "cell", key: "cell" },
+  { label: "nat", key: "nat" },
+  { label: "city", key: "city" },
+  { label: "state", key: "state" },
+  { label: "country", key: "country" },
+  { label: "picture", key: "picture" },
+];
